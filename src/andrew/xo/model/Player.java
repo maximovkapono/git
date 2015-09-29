@@ -1,10 +1,10 @@
 package src.andrew.xo.model;
 
 public class Player {
-	private String name;
-	private String figure;
+	private final String name;
+	private final String figure;
 
-	public Player(String name, String figure) {
+	public Player(final String name, final String figure) {
 		this.name = name;
 		this.figure = figure;
 	}

@@ -13,7 +13,20 @@ public class ConsoleView {
 		System.out.println(game.getGameName());
 	}
 
-	public void showPlayersName() {
+	public void showBoard() {
+        for (int i = 0; i < 3; i++) {
+            showRow(i);
+        }
+    }
+
+    private void showRow(int row) {
+        for (int i = 0; i < 3; i++) {
+            System.out.print(game.getBoard().getFigure(i, row) + " ");
+        }
+        System.out.println();
+    }
+
+    public void showPlayersName() {
 		System.out.println("---");
 		System.out.println(game.getPlayersName());
 	}
